@@ -10,7 +10,7 @@
   --border:#e5e7eb;
   --shadow: 0 10px 25px rgba(0,0,0,0.08);
 }
-@media (prefers-color-scheme: dark){
+@media (prefers-color-scheme: light ){
   :root{
     --bg:#ffffff;
     --text:#7ea797;
