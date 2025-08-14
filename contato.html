@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contato — Cuidar & Conectar</title>
+  <meta name="description" content="Fale com nossa equipe e solicite uma avaliação gratuita." />
+  <link rel="icon" href="assets/img/logo.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+  <header class="header">
+    <div class="container header__wrap">
+      <a href="index.html" class="brand">
+        <img src="assets/img/logo.svg" alt="" class="brand__logo" />
+        <span class="brand__name">Cuidar & Conectar</span>
+      </a>
+      <nav class="nav" aria-label="Menu principal">
+        <button class="nav__toggle" aria-expanded="false" aria-controls="menu">Menu</button>
+        <ul id="menu" class="nav__list">
+          <li><a href="index.html">Início</a></li>
+          <li><a href="servicos.html">Serviços</a></li>
+          <li><a href="sobre.html">Sobre</a></li>
+          <li><a href="cuidadores.html">Cuidadores</a></li>
+          <li><a href="contato.html" class="active">Contato</a></li>
+          <li><a class="btn btn--small btn--outline" href="#" aria-disabled="true">Portal</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="conteudo" class="container">
+    <header class="page__header">
+      <h1>Fale conosco</h1>
+      <p>Retornamos rapidamente para entender suas necessidades e apresentar a melhor proposta.</p>
+    </header>
+
+    <section class="grid grid--2">
+      <form id="form-contato" class="form card" novalidate>
+        <h2>Solicitar avaliação</h2>
+        <label>
+          Seu nome
+          <input type="text" name="nome" required minlength="3" />
+        </label>
+        <label>
+          E-mail
+          <input type="email" name="email" required />
+        </label>
+        <label>
+          Telefone (WhatsApp)
+          <input type="tel" name="telefone" required />
+        </label>
+        <label>
+          Cidade/UF
+          <input type="text" name="cidade" required />
+        </label>
+        <label>
+          Tipo de cuidado
+          <select name="tipo" required>
+            <option value="">Selecione</option>
+            <option value="idosos">Idosos</option>
+            <option value="gestantes">Gestantes/Pós-parto</option>
+            <option value="especiais">Necessidades especiais</option>
+          </select>
+        </label>
+        <label>
+          Mensagem
+          <textarea name="mensagem" rows="5" placeholder="Conte brevemente sua necessidade" required></textarea>
+        </label>
+        <div class="form__actions">
+          <button class="btn" type="submit">Enviar</button>
+          <a class="btn btn--secondary" target="_blank" href="https://wa.me/5511999999999">Chamar no WhatsApp</a>
+        </div>
+        <p class="form__msg" aria-live="polite"></p>
+      </form>
+
+      <div class="contact-info">
+        <h2>Informações</h2>
+        <ul class="list">
+          <li><strong>Telefone:</strong> <a href="tel:+5511999999999">+55 11 99999-9999</a></li>
+          <li><strong>E-mail:</strong> <a href="mailto:contato@seu-dominio.com">contato@seu-dominio.com</a></li>
+          <li><strong>Endereço:</strong> Rua Exemplo, 123 — Sua cidade/UF</li>
+        </ul>
+        <div class="map__embed">
+          <iframe title="Mapa" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+            src="https://www.google.com/maps?q=Av.%20Paulista%2C%20S%C3%A3o%20Paulo&output=embed">
+          </iframe>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div>
+        <a class="brand brand--footer" href="index.html">
+          <img src="assets/img/logo.svg" alt="" class="brand__logo" />
+          <span class="brand__name">Cuidar & Conectar</span>
+        </a>
+        <p>Excelência em cuidado domiciliar, com tecnologia e humanização.</p>
+      </div>
+      <div>
+        <h3>Links</h3>
+        <ul class="list">
+          <li><a href="servicos.html">Serviços</a></li>
+          <li><a href="sobre.html">Sobre</a></li>
+          <li><a href="cuidadores.html">Cuidadores</a></li>
+          <li><a href="contato.html">Contato</a></li>
+          <li><a href="privacidade.html">Privacidade</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Contato</h3>
+        <ul class="list">
+          <li><a href="tel:+5511999999999">+55 11 99999-9999</a></li>
+          <li><a href="mailto:contato@seu-dominio.com">contato@seu-dominio.com</a></li>
+          <li><a target="_blank" href="https://wa.me/5511999999999">WhatsApp</a></li>
+          <li>Sua cidade, Seu estado</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <div class="container">
+        <small>© <span id="year"></span> Cuidar & Conectar. Todos os direitos reservados.</small>
+      </div>
+    </div>
+  </footer>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Cuidadores — Trabalhe conosco | Cuidar & Conectar</title>
+  <meta name="description" content="Faça parte da nossa equipe de cuidadores. Cadastre-se para oportunidades." />
+  <link rel="icon" href="assets/img/logo.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+  <header class="header">
+    <div class="container header__wrap">
+      <a href="index.html" class="brand">
+        <img src="assets/img/logo.svg" alt="" class="brand__logo" />
+        <span class="brand__name">Cuidar & Conectar</span>
+      </a>
+      <nav class="nav" aria-label="Menu principal">
+        <button class="nav__toggle" aria-expanded="false" aria-controls="menu">Menu</button>
+        <ul id="menu" class="nav__list">
+          <li><a href="index.html">Início</a></li>
+          <li><a href="servicos.html">Serviços</a></li>
+          <li><a href="sobre.html">Sobre</a></li>
+          <li><a href="cuidadores.html" class="active">Cuidadores</a></li>
+          <li><a href="contato.html">Contato</a></li>
+          <li><a class="btn btn--small btn--outline" href="#" aria-disabled="true">Portal</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="conteudo" class="container">
+    <header class="page__header">
+      <h1>Trabalhe Conosco</h1>
+      <p>Buscamos profissionais empáticos, responsáveis e comprometidos com a excelência.</p>
+    </header>
+
+    <section class="grid grid--2">
+      <div>
+        <h2>Pré-requisitos</h2>
+        <ul class="checklist">
+          <li>Curso de cuidador ou área de saúde</li>
+          <li>Experiência comprovada</li>
+          <li>Referências profissionais</li>
+          <li>Disponibilidade de horários</li>
+        </ul>
+        <p class="muted">Todos os cadastros passam por avaliação e verificação de antecedentes.</p>
+      </div>
+      <form id="form-cuidadores" class="form card" novalidate>
+        <h2>Cadastro</h2>
+        <label>
+          Nome completo
+          <input type="text" name="nome" required minlength="3" />
+        </label>
+        <label>
+          E-mail
+          <input type="email" name="email" required />
+        </label>
+        <label>
+          Telefone (WhatsApp)
+          <input type="tel" name="telefone" required />
+        </label>
+        <label>
+          Cidade/UF
+          <input type="text" name="cidade" required />
+        </label>
+        <label>
+          Experiência (resumo)
+          <textarea name="experiencia" rows="4" required></textarea>
+        </label>
+        <label>
+          Links (LinkedIn/portfólio, opcional)
+          <input type="url" name="links" placeholder="https://..." />
+        </label>
+        <button class="btn" type="submit">Enviar cadastro</button>
+        <p class="form__msg" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div>
+        <a class="brand brand--footer" href="index.html">
+          <img src="assets/img/logo.svg" alt="" class="brand__logo" />
+          <span class="brand__name">Cuidar & Conectar</span>
+        </a>
+        <p>Excelência em cuidado domiciliar, com tecnologia e humanização.</p>
+      </div>
+      <div>
+        <h3>Links</h3>
+        <ul class="list">
+          <li><a href="servicos.html">Serviços</a></li>
+          <li><a href="sobre.html">Sobre</a></li>
+          <li><a href="cuidadores.html">Cuidadores</a></li>
+          <li><a href="contato.html">Contato</a></li>
+          <li><a href="privacidade.html">Privacidade</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Contato</h3>
+        <ul class="list">
+          <li><a href="tel:+5511999999999">+55 11 99999-9999</a></li>
+          <li><a href="mailto:contato@seu-dominio.com">contato@seu-dominio.com</a></li>
+          <li><a target="_blank" href="https://wa.me/5511999999999">WhatsApp</a></li>
+          <li>Sua cidade, Seu estado</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <div class="container">
+        <small>© <span id="year"></span> Cuidar & Conectar. Todos os direitos reservados.</small>
+      </div>
+    </div>
+  </footer>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
